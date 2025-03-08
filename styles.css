@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10;
+  padding: 0;
+  background-color: hsl(47, 12%, 71%);
+}
+
+header {
+  background-image: url("cover.jpg");
+  color: #0c0fda;
+  padding: 20px;
+  justify-content:center;
+}
+
+.navbar {
+  display:list-item;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  color: rgb(174, 20, 20);
+  font-size: 70px;
+  font-family:monospace;
+  margin-left: 0%;
+  
+  
+}
+
+nav ul {
+  list-style-type: style none;;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 3px;
+
+}
+
+nav a {
+  
+  padding: 3px;
+  color: hsl(0, 67%, 2%);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #090907;
+  background-color: #f9f9f9;
+}
+
+.search {
+  margin-top: 10px;
+  
+  align-items: center;
+  
+}
+
+.search input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #d82a2a;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  
+}
+
+.search button {
+  background-color: hsl(0, 3%, 12%);
+  color: hsl(129, 16%, 92%);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color:#f9f9f9;
+
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.filters {
+  flex: 0 0 250px;
+  background-color: hwb(270 7% 68%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters h2 {
+  font-size: 24px;
+  color: #f7f8f4;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filters label {
+  display: block;
+  font-size: 16px;
+  color: #f7f8f4;
+  margin-bottom: 5px;
+}
+
+.filters select {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filters button {
+  width: 100%;
+  background-color: #f01919;
+  color: #f7f8f4;
+  border-radius: 5%;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #e42f2f;
+}
+
+.products {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background-color: #311414;
+  color: #f7f8f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.product button {
+  background-color: #c3c1e4;
+  color: #100f0f;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+
+aside.cart {
+  flex: 0 0 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  font-size: 24px;
+  color: #0c0fda;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.cart-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cart-summary {
+  text-align: center;
+}
+
+.cart-summary p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cart-summary button {
+  background-color: #e80f28;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+  background-color: #e81e1e;
+}
+
+
+.search input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #333;
+}
+

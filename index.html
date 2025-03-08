@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop-Wave</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo"><b>Online shop</b></h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><b>Home</b></a></li>
+          <li><a href="#products" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><b>Products</b></a></li>
+          <li><a href="#cart" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><b>Cart</b></a></li>
+          <li><a href="#contact us" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><b>Cart</b></a></li>
+          <li><a href="#about" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><b>Cart</b></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+
+  </header>
+  <aside class="cart" id="cart">
+    <h2>Shopping Cart</h2>
+    <div class="cart-items">
+      <!-- Shopping cart items will be added with JavaScript -->
+    </div>
+    <div class="cart-summary">
+      <p>Total Amount: $<span id="totalCost">0.00</span></p>
+      <button onclick="checkout()">Pay Bill</button>
+    </div>
+  </aside>
+
+  <main>
+    <div class="products">
+      <!-- Product listing will be added with JavaScript -->
+    </div>
+    <div class="filters">
+      <h2>Filters</h2>
+      <label for="priceFilter">Price:</label>
+      <select id="priceFilter" onchange="applyFilters()">
+        <option value="">All</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+      </select>
+      <label for="categoryFilter">Category:</label>
+      <select id="categoryFilter" onchange="applyFilters()">
+        <option value="">All</option>
+        <!-- Categories will be added with JavaScript -->
+      </select>
+      <label for="brandFilter">Brand:</label>
+      <select id="brandFilter" onchange="applyFilters()">
+        <option value="">All</option>
+        <!-- Brands will be added with JavaScript -->
+      </select>
+      <button onclick="clearFilters()">Clear Filters</button>
+    </div>
+
+  </main>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
